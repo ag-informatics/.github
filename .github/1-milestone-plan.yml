@@ -1,6 +1,6 @@
 name: Plan a milestone
 description: Opens a milestone — its scope, what done looks like, and the issues that will go in it. One per milestone.
-title: "project: M# - milestone name"
+title: "project: milestone name"
 type: Plan
 body:
   - type: textarea

@@ -1,6 +1,6 @@
 name: Plan a paper milestone
 description: Opens a manuscript — its argument, audience, and venue. One per paper, agreed before drafting starts.
-title: "project: P# - manuscript title"
+title: "project: manuscript title"
 labels: ["writing"]
 type: Plan
 body:

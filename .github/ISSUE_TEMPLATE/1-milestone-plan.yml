@@ -1,0 +1,52 @@
+name: Plan a milestone
+description: Opens a milestone — its scope, what done looks like, and the issues that will go in it. One per milestone.
+title: "project: M# - milestone name"
+type: Plan
+body:
+  - type: textarea
+    id: links
+    attributes:
+      label: Related materials and resources
+      placeholder: ...links to your timeline, planning notes, or related issues.
+    validations:
+      required: false
+  - type: input
+    id: period
+    attributes:
+      label: Time period being scoped
+      placeholder: e.g., Fall 2026 (Sep to Dec)
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & definition of done
+      description: What this milestone covers, and what is true when it is finished.
+    validations:
+      required: true
+  - type: textarea
+    id: issues
+    attributes:
+      label: Issues to create
+      description: The work you intend to open under this milestone.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / open questions
+      placeholder: ...context, dependencies, or anything you need a decision on before this is finalised.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: >
+        **Before you close the tab, set these in the sidebar:** **Start date**, **Due date**, and **Review stage**.
+        This form cannot fill them in for you, and the roadmap and review views read all three.
+  - type: markdown
+    attributes:
+      value: >
+        How to fill this in, and what happens next: [Milestones](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/tutorials/03-milestones.md) · [Working conventions](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/conventions.md)

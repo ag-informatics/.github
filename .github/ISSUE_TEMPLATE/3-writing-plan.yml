@@ -1,0 +1,81 @@
+name: Plan a paper milestone
+description: Opens a manuscript — its argument, audience, and venue. One per paper, agreed before drafting starts.
+title: "project: P# - manuscript title"
+labels: ["writing"]
+type: Plan
+body:
+  - type: textarea
+    id: links
+    attributes:
+      label: Related materials and resources
+      placeholder: ...Drive folder, Zotero collection, venues sheet, related issues.
+    validations:
+      required: false
+  - type: dropdown
+    id: genre
+    attributes:
+      label: Genre
+      options:
+        - argumentative
+        - analytical
+        - design
+        - data
+        - case study
+    validations:
+      required: true
+  - type: textarea
+    id: argument
+    attributes:
+      label: Core claims & contribution
+      description: "This paper claims X because Y. This matters to the field because Z."
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      placeholder: |
+        Problem statement:
+        Knowledge gap:
+        3–5 contributions:
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience, in priority order
+      placeholder: ...who you are speaking to, most important first, and why they care.
+    validations:
+      required: true
+  - type: textarea
+    id: venue
+    attributes:
+      label: Venue & deadline
+      placeholder: ...venue decision, submission date or rolling, word limits, OA cost.
+    validations:
+      required: false
+  - type: checkboxes
+    id: setup
+    attributes:
+      label: Setup checklist
+      options:
+        - label: Milestone created for this paper
+        - label: Drive manuscript folder created
+        - label: Zotero collection created
+        - label: Miro board (if needed)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / open questions
+      placeholder: ...anything unresolved that should be settled before drafting begins.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: >
+        **Before you close the tab, set these in the sidebar:** **Start date**, **Due date** (the submission date), and **Review stage**.
+        This form cannot fill them in for you, and the roadmap reads the dates.
+  - type: markdown
+    attributes:
+      value: >
+        How to fill this in, and what happens next: [Milestones](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/tutorials/03-milestones.md) · [Writing & review](https://github.com/ag-informatics/axilab-handbook/blob/main/writing-process/writing-and-review.md) · [Working conventions](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/conventions.md)

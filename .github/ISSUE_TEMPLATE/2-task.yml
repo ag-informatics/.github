@@ -1,0 +1,35 @@
+name: Task
+description: One concrete piece of work. The default template — most issues are this.
+title: "project: what the task is"
+type: Task
+body:
+  - type: textarea
+    id: links
+    attributes:
+      label: Related materials and resources
+      placeholder: ...links to relevant data, docs, or prior issues.
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal & definition of done
+      description: What this is, and what is true when it is finished.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / open questions
+      placeholder: ...context, dependencies, or anything you need a decision on.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: >
+        **Before you close the tab, set these in the sidebar:** **Due date**, **Review stage**, and an **assignee**.
+        This form cannot fill them in for you. An unassigned issue is one nobody is going to move.
+  - type: markdown
+    attributes:
+      value: >
+        How to fill this in, and what to set before you close the tab: [Issues](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/tutorials/04-issues.md) · [Working conventions](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/conventions.md)

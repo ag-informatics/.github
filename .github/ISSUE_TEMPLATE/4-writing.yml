@@ -1,0 +1,85 @@
+name: Paper draft
+description: One round of review on a draft. Several of these belong to a paper's milestone.
+title: "project: short title - stage"
+labels: ["writing"]
+type: Draft
+body:
+  - type: textarea
+    id: links
+    attributes:
+      label: Related materials and resources
+      placeholder: ...the draft (Google Doc / Word / Overleaf), the paper's planning issue, supplementary materials.
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Revision stage
+      description: How far along the draft itself is. Distinct from Review stage in the sidebar, which is who owes attention next.
+      options:
+        - Research memo
+        - Argumentative outline
+        - First full draft
+        - Revised draft
+        - Near-final
+        - Submission-ready
+    validations:
+      required: true
+  - type: textarea
+    id: changed
+    attributes:
+      label: What has changed since the last review?
+      placeholder: ...and which prior feedback you handled, how, or why not.
+    validations:
+      required: true
+  - type: textarea
+    id: sections
+    attributes:
+      label: Which sections are ready for review?
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: not_ready
+    attributes:
+      label: Which sections are not ready, and what is the plan for them?
+      placeholder: ...for each, its status and your next step.
+    validations:
+      required: false
+  - type: checkboxes
+    id: feedback
+    attributes:
+      label: Feedback I want
+      options:
+        - label: Content (substance, logic, argument)
+        - label: Organization (structure, sequencing, flow)
+        - label: Reading experience (clarity, style, tone)
+        - label: Mechanics (grammar, formatting) — special request
+        - label: Other (explain below)
+  - type: textarea
+    id: questions
+    attributes:
+      label: Specific questions
+      placeholder: |
+        For each: what I tried to do / what I am uncertain about / what I want from you.
+        Name one decision you are genuinely undecided on — state both options and ask reviewers to argue one.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / open questions
+      placeholder: ...anything else reviewers should know before they start.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: >
+        **Before you close the tab, set these in the sidebar:** **Due date**, **Review stage** (`internal peer review` first — peer review comes before `ankita review`), and assign it to whoever you want to read it.
+        This form cannot fill them in for you.
+  - type: markdown
+    attributes:
+      value: >
+        Draft stages, reviewer roles, and the feedback contract: [Writing & review](https://github.com/ag-informatics/axilab-handbook/blob/main/writing-process/writing-and-review.md) · [Working conventions](https://github.com/ag-informatics/axilab-handbook/blob/main/project-management/conventions.md)
